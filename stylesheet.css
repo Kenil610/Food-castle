@@ -129,7 +129,7 @@
     line-height: 22px;
     padding-top: 10px;
 }
-.franchise{
+.franchise {
     background-image: url("photos/coffee1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -138,26 +138,36 @@
     display: flex;
     align-items: center;
 }
-.rapper{
+
+.rapper {
     background-color: rgba(0, 0, 0, 0.75);
     height: 400px;
-    width: 50%;
-    border-radius:0px 50px 50px 0px; 
+    width: 100%; /* Change this to 100% for responsiveness */
     text-align: center;
 }
-.rapper h1{
+
+.rapper h1 {
     padding-top: 70px;
     color: white;
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
 }
-.rapper p{
+
+.rapper p {
     color: rgba(255, 255, 255, 0.7)
 }
-.rapper h6{
-    color:#ab8b65;
+
+.rapper h6 {
+    color: #ab8b65;
     font-size: 22px;
 }
+
+@media (min-width: 768px) {
+    .rapper {
+        width: 50%; 
+    }
+}
+
 .card-text2 {
     color: #212529;
     line-height: 25px;
